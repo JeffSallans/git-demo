@@ -1,0 +1,44 @@
+.pull-left {
+	position: absolute;
+	left: 0px;
+	width: 50%;
+}
+
+.pull-left-quarter {
+	position: absolute;
+	left: 0px;
+	width: 25%;
+}
+
+.pull-right {
+	position: absolute;
+	right: 0;
+	width: 50%;
+}
+
+.picture-frame {
+	
+	width: 700px;
+	height: 800px;
+}
+
+.blank-background {
+	background-color: white !important;
+}
+
+.picture-frame img {
+	
+	left: 0px;
+	position: absolute;
+	width: 800px;
+}
+
+img.full-screen {
+	width: 700px;
+	margin-top: 100px !important;
+}
+
+.git-basics {
+	height: 400px;
+	width: auto;
+}
