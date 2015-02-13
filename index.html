@@ -85,6 +85,11 @@
 				<!-- Good Entry Point -->
 				<section>
 					<section>
+						<h2>Download Git</h2>
+						<p><a target="_blank" href="http://git-scm.com/downloads">Terminal</a></p>
+						<p><a target="_blank" href="http://windows.github.com/">Github For Windows</a></p>
+					</section>
+					<section>
 						<h2>Basic Commands</h2>
 						<div class="pull-left">
 							<p>Init</p>
@@ -184,7 +189,7 @@
 						<small>b flag creates a new branch</small>
 						<p>git merge &lt;branch name&gt;</p>
 						<small>Combine changes of two branches</small>
-						<aside>
+						<aside class="notes">
 							Move branch, change in work state.
 						</aside>
 					</section>
@@ -230,7 +235,7 @@
 						<p>Isolate new features</p>
 						<p>Good for release organization</p>
 						<small>Read More 
-							<a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow/">
+							<a target="_blank" href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow/">
 							Here</a>
 						</small>
 						<aside class="notes">
@@ -240,6 +245,8 @@
 					<section>
 						<img class="full-screen blank-background" src="content/gitflow.svg">
 						<aside class="notes">
+							Each dot is a commit
+							The colors represent different git branches
 							Develop - used to share<br>
 							Feature - new additions<br>
 							Release - a branch to stage deployment<br>
@@ -252,9 +259,29 @@
 				<section>
 					<h2>Linear Flow</h2>
 					<section>
+						<h2>Rebase</h2>
+						<img class="blank-background" src="content/git-rebase.png">
+						<aside class="notes">
+							Rebase changes commits<br>
+							Change commit order
+						</aside>
+					</section>
+					<section>
 						<p>Rebase and cherry-pick instead of merge</p>
 						<p>Rebase commits into one commit</p>
 						<p>Cherry-pick commit into master</p>
+						<aside class="notes">
+							Cherry-picking is copying a single commit between branches
+						</aside>
+					</section>
+					<section>
+						<h2>Merge vs Rebase</h2>
+						<img class="blank-background" src="content/git-loopy.png">
+						<aside class="notes">
+							Main difference is merge vs rebase<br>
+							You can see how much easier the commits are to understand<br>
+							Is this worth the time
+						</aside>
 					</section>
 					<section>
 						<h2>Upside</h2>
@@ -270,7 +297,7 @@
 						<p>More time</p>
 						<p>More complex</p>
 						<small>Read More 
-							<a href="http://git-scm.com/book/en/v2/Distributed-Git-Maintaining-a-Project#_rebase_cherry_pick">
+							<a target="_blank" href="http://git-scm.com/book/en/v2/Distributed-Git-Maintaining-a-Project#_rebase_cherry_pick">
 							Here</a>
 						</small>
 					</section>
@@ -307,7 +334,41 @@
 						</aside>
 					</section>
 				</section>
-				
+
+				<!-- Other Scenarios -->
+				<section>
+					<h2>Other Scenarios</h2>
+					<section>
+						<h2>Find When A Bug Was Introduced</h2>
+						<p>bisect</p>
+						<small>Binary search interface for checking out commits</small>
+						<aside class="notes">
+							I searched 180 commits<br>
+							by checking out 8 commits<br>
+							took me 30 minutes 
+						</aside>
+					</section>
+					<section>
+						<h2>Remove developing code for a demo</h2>
+						<p>git stash save &lt;save message&gt;</p>
+						<small>Stores the diff as metadata in the .git folder</small>
+						<p>git stash apply</p>
+						<small>Last save stash is added back to work space</small>
+						<aside class="notes">
+							Move branch, change in work state<br>
+							DON't use git stash pop
+						</aside>
+					</section>
+					<section>
+						<h2>Find a commit for a specific line of code</h2>
+						<p>git blame &lt;filename&gt;</p>
+					</section>
+					<section>
+						<h2>Undo all the changes of a commit</h2>
+						<p>git revert &lt;commit hash&gt;</p>
+					</section>
+				</section>
+
 				<section>
 					<h2>Questions?</h2>
 				</section>
