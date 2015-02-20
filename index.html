@@ -240,7 +240,7 @@
 
 				<!-- Use on Enterprise Level -->
 				<section>
-					<h2>Enterprise</h2>
+					<h2>Enterprise Workflows</h2>
 					<aside class="notes">
 						How it is used in large code projects.
 					</aside>
@@ -248,7 +248,7 @@
 
 				<!-- Git Flow -->
 				<section>
-					<h2>Git Flow</h2>
+					<h2>Branching technique - Git Flow</h2>
 					<section>
 						<p>Large code management</p>
 						<p>Used at GreenPath</p>
@@ -277,19 +277,25 @@
 
 				<!-- Git Rebase Cherry-pick -->
 				<section>
-					<h2>Linear Flow</h2>
+					<h2>Merge technique - Rebase and Cherry Pick</h2>
 					<section>
 						<h2>Rebase</h2>
 						<img class="blank-background" src="content/git-rebase.png">
 						<aside class="notes">
 							Rebase changes commits<br>
-							Change commit order
+							Change commit order<br>
+							Use to abstract the details<br>
+							Demo
 						</aside>
 					</section>
 					<section>
 						<p>Rebase and cherry-pick instead of merge</p>
 						<p>Rebase commits into one commit</p>
 						<p>Cherry-pick commit into master</p>
+						<small>Read More 
+							<a target="_blank" href="http://git-scm.com/book/en/v2/Distributed-Git-Maintaining-a-Project#_rebase_cherry_pick">
+							Here</a>
+						</small>
 						<aside class="notes">
 							Cherry-picking is copying a single commit between branches
 						</aside>
@@ -304,22 +310,17 @@
 						</aside>
 					</section>
 					<section>
-						<h2>Upside</h2>
+						<h2>Why</h2>
 						<p>Keep a cleaner history</p>
 						<p>Prevents auto merge bugs</p>
 						<p>Easier to revisit versions</p>
 						<aside class="notes">
-							Use commit for code review.
+							Use commit for code review.<br>
+							Abstract development checkpoints to a deliverable<br>
+							Down Side<br>
+							More time<br>
+							More complex<br>
 						</aside>
-					</section>
-					<section>
-						<h2>Downside</h2>
-						<p>More time</p>
-						<p>More complex</p>
-						<small>Read More 
-							<a target="_blank" href="http://git-scm.com/book/en/v2/Distributed-Git-Maintaining-a-Project#_rebase_cherry_pick">
-							Here</a>
-						</small>
 					</section>
 				</section>
 
@@ -337,10 +338,13 @@
 					<section>
 						<h2>Demo</h2>
 						<aside class="notes">
-							Try to merge
-							View in sublime
-							Manual merge
-							Add and commit
+							Checkout demo-merge-text<br>
+							Try to merge demo<br>
+							View in sublime<br>
+							Manual merge<br>
+							Add and commit<br>
+							Move to branch demo-p4merge<br>
+							Use p4merge<br>
 						</aside>
 					</section>
 					<section>
